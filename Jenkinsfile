@@ -4,18 +4,17 @@ pipeline {
      stages {
         stage('Build') { 
             steps { 
-                sh 'make' 
+                git 'https://github.com/amorphous4u/jenkins-java-job.git' 
             }
         }
         stage('Test'){
             steps {
-                sh 'make check'
-                junit 'reports/**/*.xml' 
+                sh 'hostname'
             }
         }
         stage('Deploy') {
             steps {
-                sh 'make publish'
+                sh 'uname -a'
             }
         }
     }
