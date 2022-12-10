@@ -3,7 +3,7 @@ pipeline {
 
     tools {
         // Print Tools 
-        echo 'This is to print tools'
+        echo "This is to print tools"
     }
 
     stages {
