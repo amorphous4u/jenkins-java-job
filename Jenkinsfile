@@ -1,11 +1,6 @@
 pipeline {
     agent any
 
-    tools {
-        // Print Tools 
-        echo "This is to print tools"
-    }
-
      stages {
         stage('Build') { 
             steps { 
