@@ -2,8 +2,8 @@ pipeline {
     agent any
 
     tools {
-        // Install the Maven version configured as "M3" and add it to the path.
-        java --version
+        // Print Tools 
+        echo 'This is to print tools'
     }
 
     stages {
